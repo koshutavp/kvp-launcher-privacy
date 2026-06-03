@@ -1,35 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Політика конфіденційності - KVP Launcher (Interface for the Elderly)</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - KVP Launcher</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: 0 auto; color: #333; }
-        h1 { color: #1E6BC9; }
-        h2 { color: #333; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px;
+            color: #333; 
+            line-height: 1.6;
+        }
+        h1 { color: #111; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        h2 { color: #222; margin-top: 30px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+        strong { color: #000; }
     </style>
+
+    <script>
+        // Automatic redirection based on browser language
+        (function() {
+            const userLang = navigator.language || navigator.userLanguage;
+            const shortLang = userLang.toLowerCase().split('-')[0];
+
+            // If the user's language is Ukrainian, redirect to the /uk/ subfolder
+            if (shortLang === 'uk') {
+                window.location.href = './uk/index.html';
+            }
+        })();
+    </script>
 </head>
 <body>
-    <h1>Політика конфіденційності додатка KVP Launcher (Interface for the Elderly)</h1>
-    <p>Ця політика конфіденційності описує, як наш додаток збирає, використовує та захищає інформацію користувачів. Ми створили цей додаток як безкоштовне програмне забезпечення для літніх людей.</p>
 
-    <h2>1. Збір та використання персональних даних</h2>
-    <p>Наш додаток потребує доступу до певних функцій пристрою виключно для забезпечення базової функціональності лаунчера:</p>
+    <h1>Privacy Policy</h1>
+    <p>This Privacy Policy governs your use of the software application <strong>KVP Launcher</strong> for mobile devices. We created this application as a free software service to provide a simple and accessible interface for users.</p>
+
+    <h2>1. Information Collection and Use</h2>
+    <p>Our application requires certain sensitive permissions to provide the core functionality of the launcher. We do not use these permissions to collect your personal information. They are used exclusively on your local device for the following purposes:</p>
     <ul>
-        <li><strong>SMS (READ_SMS, SEND_SMS):</strong> Використовується лише для підрахунку кількості непрочитаних повідомлень на головному екрані та для надсилання екстреного текстового повідомлення у разі активації режиму SOS.</li>
-        <li><strong>Дзвінки та контакти (READ_CALL_LOG, READ_CONTACTS):</strong> Використовується виключно для відображення кількості пропущених дзвінків на головному екрані та відображення імен опікунів.</li>
-        <li><strong>Камера (CAMERA):</strong> Використовується виключно для роботи функції ліхтарика.</li>
+        <li><strong>Notification Access:</strong> Used strictly to display the count of unread messages and notifications directly on the home screen icons.</li>
+        <li><strong>Phone State and Call Logs:</strong> Used exclusively to detect and display the number of missed calls on the home screen interface.</li>
     </ul>
 
-    <h2>2. Передача даних третім особам</h2>
-    <p><strong>Ми не збираємо, не зберігаємо, не відстежуємо та не передаємо</strong> жодні ваші персональні дані, вміст повідомлень чи історію дзвінків на сторонні сервери чи третім особам. Усі операції з даними відбуваються локально на вашому пристрої.</p>
+    <h2>2. Third-Party Data Transfer</h2>
+    <p><strong>We do not collect, store, track, or transfer</strong> any of your personal data, message contents, notification details, or call history to external servers or third-party companies. All operations are processed entirely on your physical device and never leave it.</p>
 
-    <h2>3. Зміни в політиці конфіденційності</h2>
-    <p>Ми можемо періодично оновлювати нашу Політику конфіденційності. Зміни вступають в силу з моменту їх публікації на цій сторінці.</p>
+    <h2>3. Changes to This Privacy Policy</h2>
+    <p>We may update our Privacy Policy from time to time. Any changes become effective immediately upon being posted on this page. You are advised to review this page periodically for any updates.</p>
 
-    <h2>4. Контакти</h2>
-    <p>Якщо у вас виникли запитання щодо цієї політики, ви можете зв'язатися з нами за адресою електронної пошти: <strong>koshutavp@gmail.com</strong></p>
-    
-    <p><em>Дата останнього оновлення: 25 травня 2026 року</em></p>
+    <h2>4. Contact Us</h2>
+    <p>If you have any questions or suggestions regarding this Privacy Policy, do not hesitate to contact the developer.</p>
+
 </body>
 </html>
