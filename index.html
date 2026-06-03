@@ -1,20 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - KVP Launcher</title>
+    <title>Privacy Policy - KVP Launcher (Interface for the Elderly)</title>
     <style>
-        body { 
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
-            max-width: 800px; 
-            margin: 0 auto; 
-            padding: 20px;
-            color: #333; 
-            line-height: 1.6;
-        }
-        h1 { color: #111; border-bottom: 1px solid #eee; padding-bottom: 10px; }
-        h2 { color: #222; margin-top: 30px; }
+        body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: 0 auto; color: #333; }
+        h1 { color: #1E6BC9; }
+        h2 { color: #333; }
         ul { padding-left: 20px; }
         li { margin-bottom: 10px; }
         strong { color: #000; }
@@ -26,7 +19,7 @@
             const userLang = navigator.language || navigator.userLanguage;
             const shortLang = userLang.toLowerCase().split('-')[0];
 
-            // If the user's language is Ukrainian, redirect to the /uk/ subfolder
+            // If the user's browser is set to Ukrainian, redirect to the /uk/ folder
             if (shortLang === 'uk') {
                 window.location.href = './uk/index.html';
             }
@@ -34,25 +27,26 @@
     </script>
 </head>
 <body>
+    <h1>Privacy Policy for KVP Launcher (Interface for the Elderly)</h1>
+    <p>This privacy policy describes how our application collects, uses, and protects user information. We created this application as a free software service for elderly people.</p>
 
-    <h1>Privacy Policy</h1>
-    <p>This Privacy Policy governs your use of the software application <strong>KVP Launcher</strong> for mobile devices. We created this application as a free software service to provide a simple and accessible interface for users.</p>
-
-    <h2>1. Information Collection and Use</h2>
-    <p>Our application requires certain sensitive permissions to provide the core functionality of the launcher. We do not use these permissions to collect your personal information. They are used exclusively on your local device for the following purposes:</p>
+    <h2>1. Collection and Use of Personal Data</h2>
+    <p>Our application requires access to certain device features exclusively to provide the core functionality of the launcher:</p>
     <ul>
-        <li><strong>Notification Access:</strong> Used strictly to display the count of unread messages and notifications directly on the home screen icons.</li>
-        <li><strong>Phone State and Call Logs:</strong> Used exclusively to detect and display the number of missed calls on the home screen interface.</li>
+        <li><strong>SMS (READ_SMS, SEND_SMS):</strong> Used only to count the number of unread messages on the home screen and to send an emergency text message when the SOS mode is activated.</li>
+        <li><strong>Calls and Contacts (READ_CALL_LOG, READ_CONTACTS):</strong> Used exclusively to display the number of missed calls on the home screen and to display the names of caregivers.</li>
+        <li><strong>Camera (CAMERA):</strong> Used exclusively for the flashlight functionality.</li>
     </ul>
 
     <h2>2. Third-Party Data Transfer</h2>
-    <p><strong>We do not collect, store, track, or transfer</strong> any of your personal data, message contents, notification details, or call history to external servers or third-party companies. All operations are processed entirely on your physical device and never leave it.</p>
+    <p><strong>We do not collect, store, track, or transfer</strong> any of your personal data, message contents, or call history to external servers or third parties. All data operations occur locally on your device.</p>
 
-    <h2>3. Changes to This Privacy Policy</h2>
-    <p>We may update our Privacy Policy from time to time. Any changes become effective immediately upon being posted on this page. You are advised to review this page periodically for any updates.</p>
+    <h2>3. Changes to the Privacy Policy</h2>
+    <p>We may periodically update our Privacy Policy. Changes become effective immediately upon being posted on this page.</p>
 
-    <h2>4. Contact Us</h2>
-    <p>If you have any questions or suggestions regarding this Privacy Policy, do not hesitate to contact the developer.</p>
-
+    <h2>4. Contacts</h2>
+    <p>If you have any questions regarding this policy, you can contact us at the email address: <strong>koshutavp@gmail.com</strong></p>
+    
+    <p><em>Last updated: May 25, 2026</em></p>
 </body>
 </html>
