@@ -13,15 +13,17 @@
         strong { color: #000; }
     </style>
 
-    <script>
+   <script>
         // Automatic redirection based on browser language
         (function() {
             const userLang = navigator.language || navigator.userLanguage;
             const shortLang = userLang.toLowerCase().split('-')[0];
 
-            // If the user's browser is set to Ukrainian, redirect to the /uk/ folder
-            if (shortLang === 'uk') {
-                window.location.href = './uk/index.html';
+            // List of supported localization folders
+            const supportedLanguages = ['uk', 'de'];
+
+            if (supportedLanguages.includes(shortLang)) {
+                window.location.href = './' + shortLang + '/index.html';
             }
         })();
     </script>
