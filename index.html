@@ -27,8 +27,11 @@
         ];
 
         if (supportedLanguages.includes(shortLang)) {
-            window.location.href = './' + shortLang + '/index.html';
-        }
+    window.location.href = './' + shortLang + '/index.html';
+} 
+        else {
+    window.location.href = './en/index.html'; // Fallback на англійську
+}
     })();
 </script>
 </head>
