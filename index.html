@@ -19,8 +19,12 @@
         const userLang = navigator.language || navigator.userLanguage;
         const shortLang = userLang.toLowerCase().split('-')[0];
 
-        // Оновлений список усіх підтримуваних папок локалізації (додали cs, hu, sk, sl)
-        const supportedLanguages = ['uk', 'de', 'pl', 'ru', 'es', 'fr', 'it', 'pt', 'cs', 'hu', 'sk', 'sl'];
+        // Список усіх 20 підтримуваних мов
+        const supportedLanguages = [
+            'uk', 'en', 'pl', 'de', 'fr', 'es', 'it', 'pt', 
+            'cs', 'sk', 'hu', 'ro', 'bg', 'lt', 'lv', 'et', 
+            'sv', 'nb', 'da', 'fi'
+        ];
 
         if (supportedLanguages.includes(shortLang)) {
             window.location.href = './' + shortLang + '/index.html';
