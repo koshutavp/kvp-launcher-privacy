@@ -16,8 +16,8 @@
     <h2>1. Colectarea și utilizarea datelor cu caracter personal</h2>
     <p>Aplicația noastră solicită acces la anumite funcții ale dispozitivului exclusiv pentru a asigura funcționalitatea de bază a launcher-ului:</p>
     <ul>
-        <li><strong>SMS (READ_SMS, SEND_SMS):</strong> Utilizat doar pentru a număra mesajele necitite pe ecranul principal și pentru a trimite un SMS de urgență în cazul activării modului SOS.</li>
-        <li><strong>Apeluri și contacte (READ_CALL_LOG, READ_CONTACTS):</strong> Utilizat exclusiv pentru a afișa numărul de apeluri pierdute pe ecranul principal și pentru a afișa numele tutorilor/contactelor desemnate.</li>
+        <li><strong>SMS (SEND_SMS):</strong> Utilizat exclusiv pentru a trimite un mesaj text de urgență către contacte predefinite atunci când butonul SOS este activat.</li>
+        <li><strong>Contacts (READ_CONTACTS):</strong> Utilizat exclusiv pentru a selecta și afișa numele îngrijitorilor pe ecranul principal pentru apelare rapidă. Apelurile pierdute și mesajele primite sunt procesate în siguranță prin accesul standard la notificări, fără a citi jurnalele de sistem.</li>        
         <li><strong>Cameră (CAMERA):</strong> Utilizat numai pentru funcționarea lanternei.</li>
         <li><strong>Vizibilitatea pachetelor (QUERY_ALL_PACKAGES):</strong> Utilizat exclusiv pentru a afișa lista completă a aplicațiilor instalate pe ecranul principal, permițând utilizatorului să le deschidă cu ușurință.</li>
         <li><strong>Acces la notificări (NotificationListenerService):</strong> Utilizat strict pentru a intercepta și afișa notificările primite (de exemplu, Viber, Telegram sau SMS) într-o fereastră de dialog mărită și ușor accesibilă pe ecranul principal.</li>
