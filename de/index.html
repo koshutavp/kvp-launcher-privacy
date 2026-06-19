@@ -27,8 +27,8 @@
     <h2>2. Erhebung und Verarbeitung personenbezogener Daten auf Ihrem Gerät</h2>
     <p>Unsere Anwendung benötigt Zugriff auf bestimmte Gerätefunktionen ausschließlich, um die Kernfunktionalität des Launchers bereitzustellen. Die Rechtsgrundlage für diese Verarbeitung ist Ihre Einwilligung gemäß <strong>Art. 6 Abs. 1 lit. a DSGVO</strong>, die Sie durch das Erteilen der jeweiligen App-Berechtigungen geben:</p>
     <ul>
-        <li><strong>SMS (READ_SMS, SEND_SMS):</strong> Wird ausschließlich verwendet, um die Anzahl der ungelesenen Nachrichten auf dem Startbildschirm anzuzeigen und im Falle der Aktivierung des SOS-Modus eine Notfall-Textnachricht zu senden.</li>
-        <li><strong>Anrufe und Kontakte (READ_CALL_LOG, READ_CONTACTS):</strong> Wird ausschließlich verwendet, um die Anzahl der verpassten Anrufe auf dem Startbildschirm anzuzeigen und die Namen der Betreuungspersonen darzustellen.</li>
+        <li><strong>SMS (SEND_SMS):</strong> Wird ausschließlich dazu verwendet, im Falle einer Aktivierung des SOS-Notfallknopfs eine SMS an vordefinierte Kontakte zu senden.</li>
+        <li><strong>Contacts (READ_CONTACTS):</strong> Wird ausschließlich dazu verwendet, die Namen von Betreuungspersonen auf dem Startbildschirm für die Kurzwahl auszuwählen und anzuzeigen. Entgangene Anrufe und eingehende Nachrichten werden sicher über den standardmäßigen Benachrichtigungszugriff verarbeitet, ohne dabei Systemprotokolle zu lesen.</li>
         <li><strong>Kamera (CAMERA):</strong> Wird ausschließlich für die Funktion der Taschenlampe benötigt.</li>
         <li><strong>Sichtbarkeit von Paketen (QUERY_ALL_PACKAGES):</strong> Wird ausschließlich verwendet, um die vollständige Liste der installierten Anwendungen auf dem Startbildschirm anzuzeigen und dem Benutzer das Starten zu ermöglichen.</li>
         <li><strong>Zugriff auf Benachrichtigungen (NotificationListenerService):</strong> Wird nur verwendet, um eingehende Benachrichtigungen (z. B. Viber oder SMS) abzufangen und in einem vergrößerten, barrierefreien Dialogfeld auf dem Hauptbildschirm anzuzeigen.</li>
