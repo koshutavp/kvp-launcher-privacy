@@ -22,8 +22,8 @@
     <h2>1. Collection and Use of Personal Data</h2>
     <p>Our application requires access to certain device features exclusively to provide the core functionality of the launcher:</p>
     <ul>
-        <li><strong>SMS (READ_SMS, SEND_SMS):</strong> Used only to count the number of unread messages on the home screen and to send an emergency text message when the SOS mode is activated.</li>
-        <li><strong>Calls and Contacts (READ_CALL_LOG, READ_CONTACTS):</strong> Used exclusively to display the number of missed calls on the home screen and to display the names of caregivers.</li>
+        <li><strong>SMS (SEND_SMS):</strong> Used exclusively to send an emergency text message to predefined contacts when the SOS panic button is activated.</li>
+        <li><strong>Contacts (READ_CONTACTS):</strong> Used exclusively to allow the user to select and display the names of caregivers on the home screen for quick dialing. Missed calls and incoming messages are handled securely via standard notification access without reading system logs.</li>
         <li><strong>Camera (CAMERA):</strong> Used exclusively for the flashlight functionality.</li>
         <li><strong>Package Visibility (QUERY_ALL_PACKAGES):</strong> Used exclusively to display the full list of installed applications on the home screen and allow the user to launch them.</li>
         <li><strong>Notification Access (NotificationListenerService):</strong> Used only to intercept and display incoming notifications (like Viber or SMS) in an enlarged, accessible dialog on the home screen.</li>
