@@ -16,8 +16,8 @@
     <h2>1. Recopilación y uso de datos personales</h2>
     <p>Nuestra aplicación requiere acceso a ciertas funciones del dispositivo con el único propósito de garantizar las funciones básicas del lanzador (launcher):</p>
     <ul>
-        <li><strong>SMS (READ_SMS, SEND_SMS):</strong> Se utiliza exclusivamente para contabilizar los mensajes no leídos en la pantalla principal y para enviar un mensaje de texto de emergencia en caso de activar el modo SOS.</li>
-        <li><strong>Llamadas y contactos (READ_CALL_LOG, READ_CONTACTS):</strong> Se utiliza únicamente para mostrar el número de llamadas perdidas en la pantalla principal y para gestionar y mostrar los nombres de los cuidadores o contactos de confianza.</li>
+        <li><strong>SMS (SEND_SMS):</strong> Se utiliza exclusivamente para enviar un mensaje de texto de emergencia a contactos predefinidos cuando se activa el botón de SOS.</li>
+        <li><strong>Contacts (READ_CONTACTS):</strong> Se utiliza exclusivamente para seleccionar y mostrar los nombres de los cuidadores en la pantalla de inicio para realizar llamadas rápidas. Las llamadas perdidas y los mensajes entrantes se procesan de forma segura mediante el acceso estándar a las notificaciones, sin leer los registros del sistema.</li>        
         <li><strong>Cámara (CAMERA):</strong> Se utiliza exclusivamente para el correcto funcionamiento de la función de linterna.</li>
         <li><strong>Visibilidad de paquetes (QUERY_ALL_PACKAGES):</strong> Se utiliza exclusivamente para mostrar la lista completa de aplicaciones instaladas en la pantalla de inicio y permitir al usuario iniciarlas.</li>
         <li><strong>Acceso a notificaciones (NotificationListenerService):</strong> Se utiliza solo para interceptar y mostrar las notificaciones entrantes (como Viber o SMS) en un cuadro de diálogo ampliado y accesible directamente en la pantalla principal.</li>
