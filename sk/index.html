@@ -16,8 +16,8 @@
     <h2>1. Zhromažďovanie a používanie osobných údajov</h2>
     <p>Naša aplikácia vyžaduje prístup k určitým funkciám zariadenia výhradne na zabezpečenie základnej funkčnosti spúšťača:</p>
     <ul>
-        <li><strong>SMS (READ_SMS, SEND_SMS):</strong> Používa sa iba na zobrazenie počtu neprečítaných správ na hlavnej obrazovke a na odoslanie núdzovej textovej správy v prípade aktivácie režimu SOS.</li>
-        <li><strong>Hovory a kontakty (READ_CALL_LOG, READ_CONTACTS):</strong> Používa sa výhradne na zobrazenie počtu zmeškaných hovorov na hlavnej obrazovke a zobrazenie mien opatrovateľov.</li>
+<li><strong>SMS (SEND_SMS):</strong> Používa sa výhradne na odoslanie núdzovej textovej správy vopred definovaným kontaktom pri aktivácii tlačidla SOS.</li>
+<li><strong>Contacts (READ_CONTACTS):</strong> Používa sa výhradne na výber a zobrazenie mien opatrovateľov na domovskej obrazovke pre rýchlu voľbu. Zmeškané hovory a prichádzajúce správy sa bezpečne spracovávajú prostredníctvom štandardného prístupu k upozorneniam bez čítania systémových protokolov.</li>
         <li><strong>Kamera (CAMERA):</strong> Používa sa výhradne na fungovanie funkcie baterky.</li>
         <li><strong>Zobrazenie zoznamu aplikácií (QUERY_ALL_PACKAGES):</strong> Používa sa výhradne na zobrazenie úplného zoznamu nainštalovaných aplikácií na hlavnej obrazovke a na umožnenie používateľovi ich spúšťať.</li>
         <li><strong>Prístup k oznámeniam (NotificationListenerService):</strong> Používa sa iba na zachytenie a zobrazenie prichádzajúcich oznámení (napr. Viber alebo SMS) vo zväčšenom, prístupnom dialógovom okne na hlavnej obrazovke.</li>
