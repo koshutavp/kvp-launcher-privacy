@@ -16,8 +16,8 @@
     <h2>1. Zbiranje in uporaba osebnih podatkov</h2>
     <p>Naša aplikacija zahteva dostop do določenih funkcij naprave izključno za zagotavljanje osnovnega delovanja zaganjalnika:</p>
     <ul>
-        <li><strong>SMS (READ_SMS, SEND_SMS):</strong> Uporablja se samo za prikaz števila neprebranih sporočil na glavnem zaslonu in za pošiljanje nujnega besedilnega sporočila v primeru aktiviranja načina SOS.</li>
-        <li><strong>Klici in stiki (READ_CALL_LOG, READ_CONTACTS):</strong> Uporablja se izključno za prikaz števila neodgovorjenih klicev na glavnem zaslonu in za prikaz imen skrbnikov.</li>
+        <li><strong>SMS (SEND_SMS):</strong> Uporablja se izključno za pošiljanje nujnega besedilnega sporočila vnaprej določenim stikom ob aktivaciji gumba SOS.</li>
+        <li><strong>Contacts (READ_CONTACTS):</strong> Uporablja se izključno za izbiro in prikaz imen oskrbovalcev na začetnem zaslonu za hitro klicanje. Zgrešeni klici in dohodna sporočila se varno obdelujejo prek standardnega dostopa do obvestil, ne da bi se brali sistemski dnevniki.</li>        
         <li><strong>Kamera (CAMERA):</strong> Uporablja se izključno za delovanje funkcije svetilke.</li>
         <li><strong>Vidnost paketov (QUERY_ALL_PACKAGES):</strong> Uporablja se izključno za prikaz celotnega seznama nameščenih aplikacij na glavnem zaslonu in uporabniku omogoča njihovo zaganjanje.</li>
         <li><strong>Dostop do obvestil (NotificationListenerService):</strong> Uporablja se samo za prestrezanje in prikaz prejetih obvestil (npr. Viber ali SMS) v povečanem, dostopnem pogovornem oknu na glavnem zaslonu.</li>
