@@ -23,8 +23,8 @@
     <h2>2. Gromadzenie i wykorzystanie danych osobowych</h2>
     <p>Nasza aplikacja wymaga dostępu do niektórych funkcji urządzenia wyłącznie w celu zapewnienia podstawowej funkcjonalności launchera. Wszystkie operacje są przetwarzane na podstawie Twojej zgody bezpośrednio na Twoim urządzeniu:</p>
     <ul>
-        <li><strong>SMS (READ_SMS, SEND_SMS):</strong> Używane wyłącznie do zliczania liczby nieprzeczytanych wiadomości na ekranie głównym oraz do wysyłania awaryjnej wiadomości tekstowej w przypadku aktywacji trybu SOS.</li>
-        <li><strong>Połączenia i kontakty (READ_CALL_LOG, READ_CONTACTS):</strong> Używane wyłącznie do wyświetlania liczby nieodebranych połączeń na ekranie głównym oraz wyświetlania nazw opiekunów.</li>
+        <li><strong>SMS (SEND_SMS):</strong> Używane wyłącznie do wysyłania wiadomości SMS alarmowych do zdefiniowanych wcześniej kontaktów po aktywacji przycisku SOS.</li>
+        <li><strong>Contacts (READ_CONTACTS):</strong> Używane wyłącznie do wyboru i wyświetlania nazw opiekunów na ekranie głównym w celu szybkiego wybierania numerów. Nieodebrane połączenia i przychodzące wiadomości są bezpiecznie przetwarzane za pośrednictwem standardowego dostępu do powiadomień, bez odczytywania logów systemowych.</li>
         <li><strong>Aparat (CAMERA):</strong> Używany wyłącznie do działania funkcji latarki.</li>
         <li><strong>Widoczność pakietów (QUERY_ALL_PACKAGES):</strong> Używane wyłącznie do wyświetlania pełnej listy zainstalowanych aplikacji na ekranie głównym i umożliwienia użytkownikowi ich uruchamiania.</li>
         <li><strong>Dostęp do powiadomień (NotificationListenerService):</strong> Używane tylko do przechwytywania i wyświetlania powiadomień przychodzących (np. Viber lub SMS) w powiększonym, łatwo dostępnym oknie dialogowym na ekranie głównym.</li>
