@@ -16,8 +16,8 @@
     <h2>1. Verzameling en gebruik van persoonsgegevens</h2>
     <p>Onze applicatie vereist toegang til bepaalde apparaatfuncties uitsluitend om de basisfuncties van de launcher te garanderen:</p>
     <ul>
-        <li><strong>SMS (READ_SMS, SEND_SMS):</strong> Uitsluitend gebruikt om het aantal ongelezen berichten op het hoofdscherm te tellen en om een nood-sms te verzenden als de SOS-modus is geactiveerd.</li>
-        <li><strong>Oproepen en contacten (READ_CALL_LOG, READ_CONTACTS):</strong> Uitsluitend gebruikt om het aantal gemiste oproepen op het hoofdscherm weer te geven en de namen van de aangewezen voogden/contacten te tonen.</li>
+        <li><strong>SMS (SEND_SMS):</strong> Uitsluitend gebruikt voor het verzenden van een nood-sms naar vooraf gedefinieerde contacten wanneer de SOS-knop wordt geactiveerd.</li>
+        <li><strong>Contacts (READ_CONTACTS):</strong> Uitsluitend gebruikt om de namen van zorgverleners op het startscherm te selecteren en weer te geven voor snelkiezen. Gemiste oproepen en inkomende berichten worden veilig verwerkt via de standaard notificatietoegang, zonder dat systeemlogboeken worden gelezen.</li>ntacten te tonen.</li>
         <li><strong>Camera (CAMERA):</strong> Uitsluitend gebruikt voor de werking van de zaklampfunctie.</li>
         <li><strong>Pakketzichtbaarheid (QUERY_ALL_PACKAGES):</strong> Uitsluitend gebruikt om de volledige lijst met geïnstalleerde applicaties op het hoofdscherm weer te geven, zodat de gebruiker ze gemakkelijk kan openen.</li>
         <li><strong>Toegang tot meldingen (NotificationListenerService):</strong> Strikt gebruikt om binnenkomende meldingen (bijv. Viber, Telegram of SMS) te onderscheppen en weer te geven in een vergroot, gemakkelijk toegankelijk dialoogvenster op het hoofdscherm.</li>
