@@ -16,8 +16,8 @@
     <h2>1. Innsamling og bruk av personopplysninger</h2>
     <p>Applikasjonen vår krever tilgang til visse enhetsfunksjoner utelukkende for å sikre launcheren sin grunnleggende funksjonalitet:</p>
     <ul>
-        <li><strong>SMS (READ_SMS, SEND_SMS):</strong> Brukes kun til å telle antall uleste meldinger på startskjermen og til å sende en nød-SMS hvis SOS-modus aktiveres.</li>
-        <li><strong>Anrop og kontakter (READ_CALL_LOG, READ_CONTACTS):</strong> Brukes utelukkende til å vise antall tapte anrop på startskjermen og vise navnene på utnevnte verger/kontakter.</li>
+        <li><strong>SMS (SEND_SMS):</strong> Brukes utelukkende til å sende en nød-SMS til forhåndsdefinerte kontakter når SOS-knappen aktiveres.</li>
+        <li><strong>Contacts (READ_CONTACTS):</strong> Brukes utelukkende til å velge og vise navn på omsorgspersoner på startskjermen for hurtigringing. Tapte anrop og innkommende meldinger håndteres sikkert via standard tilgang til varsler, uten å lese systemlogger.</li>
         <li><strong>Kamera (CAMERA):</strong> Brukes kun for at lommelyktfunksjonen skal fungere.</li>
         <li><strong>Pakkesynlighet (QUERY_ALL_PACKAGES):</strong> Brukes utelukkende til å vise en fullstendig liste over installerte apper på startskjermen, slik at brukeren enkelt kan starte dem.</li>
         <li><strong>Tilgang til varslinger (NotificationListenerService):</strong> Brukes strengt til å fange opp og vise innkommende varslinger (f.eks. Viber, Telegram eller SMS) i et forstørret, lett tilgjengelig dialogvindu på startskjermen.</li>
