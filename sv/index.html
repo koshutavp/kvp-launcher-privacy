@@ -16,8 +16,8 @@
     <h2>1. Insamling och användning av personuppgifter</h2>
     <p>Vår applikation kräver åtkomst till vissa enhetsfunktioner uteslutande för att säkerställa launcherns grundläggande funktionalitet:</p>
     <ul>
-        <li><strong>SMS (READ_SMS, SEND_SMS):</strong> Används endast för att räkna antalet olästa meddelanden på startskärmen och för att skicka ett nödsms om SOS-läget aktiveras.</li>
-        <li><strong>Samtal och kontakter (READ_CALL_LOG, READ_CONTACTS):</strong> Används uteslutande för att visa antalet missade samtal på startskärmen och visa namnen på utsedda vårdnadshavare/kontakter.</li>
+        <li><strong>SMS (SEND_SMS):</strong> Används uteslutande för att skicka ett nöd-SMS till fördefinierade kontakter när SOS-knappen aktiveras.</li>
+        <li><strong>Contacts (READ_CONTACTS):</strong> Används uteslutande för att välja och visa namnen på vårdgivare på startskärmen för snabbval. Missade samtal och inkommande meddelanden hanteras säkert via standardåtkomst till aviseringar, utan att läsa systemloggar.</li>        
         <li><strong>Kamera (CAMERA):</strong> Används endast för att ficklampsfunktionen ska fungera.</li>
         <li><strong>Paketsynlighet (QUERY_ALL_PACKAGES):</strong> Används uteslutande för att visa en fullständig lista över installerade appar på startskärmen, vilket gör det möjligt för användaren att enkelt starta dem.</li>
         <li><strong>Tillgång till aviseringar (NotificationListenerService):</strong> Används strikt för att fånga upp och visa inkommande aviseringar (t.ex. Viber, Telegram eller SMS) i ett förstorat, lättillgängligt dialogfönster på startskärmen.</li>
