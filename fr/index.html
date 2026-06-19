@@ -16,8 +16,8 @@
     <h2>1. Collecte et utilisation des données personnelles</h2>
     <p>Notre application nécessite l'accès à certaines fonctionnalités de l'appareil exclusivement pour assurer les fonctionnalités de base du lanceur (launcher) :</p>
     <ul>
-        <li><strong>SMS (READ_SMS, SEND_SMS) :</strong> Utilisé uniquement pour compter le nombre de messages non lus sur l'écran d'accueil et pour envoyer un message texte d'urgence en caso d'activation du mode SOS.</li>
-        <li><strong>Appels et contacts (READ_CALL_LOG, READ_CONTACTS) :</strong> Utilisé exclusivement pour afficher le nombre d'appels manqués sur l'écran d'accueil et pour afficher les noms des aidants ou des contacts de confiance.</li>
+        <li><strong>SMS (SEND_SMS) :</strong> Utilisé exclusivement pour envoyer un message texte d'urgence aux contacts prédéfinis lorsque le bouton SOS est activé.</li>
+        <li><strong>Contacts (READ_CONTACTS) :</strong> Utilisé exclusivement pour sélectionner et afficher les noms des aidants sur l'écran d'accueil pour une numérotation rapide. Les appels manqués et les messages entrants sont traités en toute sécurité via l'accès standard aux notifications, sans lecture des journaux système.</li>        
         <li><strong>Appareil photo (CAMERA) :</strong> Utilisé exclusivement pour le fonctionnement de la fonction lampe de poche.</li>
         <li><strong>Visibilité des packages (QUERY_ALL_PACKAGES):</strong> Utilisé exclusivement pour afficher la liste complète des applications installées sur l'écran d'accueil et permettre à l'utilisateur de les lancer.</li>
         <li><strong>Accès des notifications (NotificationListenerService):</strong> Utilisé uniquement pour intercepter et afficher les notifications entrantes (comme Viber ou SMS) dans une boîte de dialogue agrandie et accessible sur l'écran principal.</li>
