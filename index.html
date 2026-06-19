@@ -13,25 +13,33 @@
         strong { color: #000; }
     </style>
 
- <script>
-    // Automatic redirection based on browser language
+<script>
     (function() {
         const userLang = navigator.language || navigator.userLanguage;
         const shortLang = userLang.toLowerCase().split('-')[0];
 
-        // Список усіх 20 підтримуваних мов
         const supportedLanguages = [
             'uk', 'en', 'pl', 'de', 'fr', 'es', 'it', 'pt', 
             'cs', 'sk', 'hu', 'ro', 'bg', 'lt', 'lv', 'et', 
             'sv', 'nb', 'da', 'fi', 'ru'
         ];
 
-        if (supportedLanguages.includes(shortLang)) {
-    window.location.href = './' + shortLang + '/index.html';
-} 
-        else {
-    window.location.href = './en/index.html'; // Fallback на англійську
-}
+        // 1. Визначаємо правильну мову (або беремо дефолтну 'en')
+        const targetLang = supportedLanguages.includes(shortLang) ? shortLang : 'en';
+
+        // 2. Динамічно і безпечно вираховуємо базовий шлях сайту
+        let basePath = window.location.pathname;
+        
+        if (basePath.endsWith('.html')) {
+            // Якщо в URL є конкретний файл (наприклад, index.html), відрізаємо його назву
+            basePath = basePath.substring(0, basePath.lastIndexOf('/') + 1);
+        } else if (!basePath.endsWith('/')) {
+            // Якщо слеша в кінці немає (пастка), примусово додаємо його
+            basePath += '/';
+        }
+
+        // 3. Робимо фінальний редирект від повної адреси сайту (origin)
+        window.location.href = window.location.origin + basePath + targetLang + '/index.html';
     })();
 </script>
 </head>
