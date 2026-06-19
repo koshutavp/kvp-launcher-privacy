@@ -1,71 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - KVP Launcher (Interface for the Elderly)</title>
-    <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: 0 auto; color: #333; }
-        h1 { color: #1E6BC9; }
-        h2 { color: #333; }
-        ul { padding-left: 20px; }
-        li { margin-bottom: 10px; }
-        strong { color: #000; }
-    </style>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <script>
+        (function() {
+            const userLang = navigator.language || navigator.userLanguage;
+            const shortLang = userLang.toLowerCase().split('-')[0];
 
-<script>
-    (function() {
-        const userLang = navigator.language || navigator.userLanguage;
-        const shortLang = userLang.toLowerCase().split('-')[0];
+            // Англійську 'en' ПОВЕРТАЄМО у список підтримуваних
+            const supportedLanguages = [
+                'uk', 'en', 'pl', 'de', 'fr', 'es', 'it', 'pt', 
+                'cs', 'sk', 'hu', 'ro', 'bg', 'lt', 'lv', 'et', 
+                'sv', 'nb', 'da', 'fi', 'ru'
+            ];
 
-        const supportedLanguages = [
-            'uk', 'pl', 'de', 'fr', 'es', 'it', 'pt', 
-            'cs', 'sk', 'hu', 'ro', 'bg', 'lt', 'lv', 'et', 
-            'sv', 'nb', 'da', 'fi', 'ru'
-        ];
+            // Якщо мова підтримується — беремо її, якщо ні — за замовчуванням 'en'
+            const targetLang = supportedLanguages.includes(shortLang) ? shortLang : 'en';
 
-        // 1. Визначаємо правильну мову (або беремо дефолтну 'en')
-        const targetLang = supportedLanguages.includes(shortLang) ? shortLang : 'en';
+            // Динамічно вираховуємо базовий шлях (враховує назву репозиторію на GitHub)
+            let basePath = window.location.pathname;
+            if (basePath.endsWith('.html')) {
+                basePath = basePath.substring(0, basePath.lastIndexOf('/') + 1);
+            } else if (!basePath.endsWith('/')) {
+                basePath += '/';
+            }
 
-        // 2. Динамічно і безпечно вираховуємо базовий шлях сайту
-        let basePath = window.location.pathname;
-        
-        if (basePath.endsWith('.html')) {
-            // Якщо в URL є конкретний файл (наприклад, index.html), відрізаємо його назву
-            basePath = basePath.substring(0, basePath.lastIndexOf('/') + 1);
-        } else if (!basePath.endsWith('/')) {
-            // Якщо слеша в кінці немає (пастка), примусово додаємо його
-            basePath += '/';
-        }
-
-        // 3. Робимо фінальний редирект від повної адреси сайту (origin)
-        window.location.href = window.location.origin + basePath + targetLang + '/index.html';
-    })();
-</script>
+            // Перенаправлення через replace (користувач не "застрягне" при натисканні кнопки Назад)
+            window.location.replace(window.location.origin + basePath + targetLang + '/index.html');
+        })();
+    </script>
 </head>
 <body>
-    <h1>Privacy Policy for KVP Launcher (Interface for the Elderly)</h1>
-    <p>This privacy policy describes how our application collects, uses, and protects user information. We created this application as a free software service for elderly people.</p>
-
-    <h2>1. Collection and Use of Personal Data</h2>
-    <p>Our application requires access to certain device features exclusively to provide the core functionality of the launcher:</p>
-    <ul>
-        <li><strong>SMS (READ_SMS, SEND_SMS):</strong> Used only to count the number of unread messages on the home screen and to send an emergency text message when the SOS mode is activated.</li>
-        <li><strong>Calls and Contacts (READ_CALL_LOG, READ_CONTACTS):</strong> Used exclusively to display the number of missed calls on the home screen and to display the names of caregivers.</li>
-        <li><strong>Camera (CAMERA):</strong> Used exclusively for the flashlight functionality.</li>
-        <li><strong>Package Visibility (QUERY_ALL_PACKAGES):</strong> Used exclusively to display the full list of installed applications on the home screen and allow the user to launch them.</li>
-        <li><strong>Notification Access (NotificationListenerService):</strong> Used only to intercept and display incoming notifications (like Viber or SMS) in an enlarged, accessible dialog on the home screen.</li>
-    </ul>
-
-    <h2>2. Third-Party Data Transfer</h2>
-    <p><strong>We do not collect, store, track, or transfer</strong> any of your personal data, message contents, or call history to external servers or third parties. All data operations occur locally on your device.</p>
-
-    <h2>3. Changes to the Privacy Policy</h2>
-    <p>We may periodically update our Privacy Policy. Changes become effective immediately upon being posted on this page.</p>
-
-    <h2>4. Contacts</h2>
-    <p>If you have any questions regarding this policy, you can contact us at the email address: <strong>koshutavp@gmail.com</strong></p>
-    
-    <p><em>Last updated: June 06, 2026</em></p>
-</body>
+    </body>
 </html>
