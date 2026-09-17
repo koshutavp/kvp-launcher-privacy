@@ -2,7 +2,7 @@
 <html lang="sv">
 <head>
     <meta charset="utf-8">
-    <title>Integritetspolicy - KVP Launcher (Interface for the Elderly)</title>
+    <title>Integritetspolicy - KVP Launcher</title>
     <style>
         body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: 0 auto; color: #333; }
         h1 { color: #1E6BC9; }
@@ -10,28 +10,22 @@
     </style>
 </head>
 <body>
-    <h1>Integritetspolicy för applikationen KVP Launcher (Interface for the Elderly)</h1>
-    <p>Denna integritetspolicy beskriver hur vår applikation samlar in, använder och skyddar användarinformation. Vi har skapat denna applikation som en gratis programvara utformad specifikt för äldre personer.</p>
-
-    <h2>1. Insamling och användning av personuppgifter</h2>
-    <p>Vår applikation kräver åtkomst till vissa enhetsfunktioner uteslutande för att säkerställa launcherns grundläggande funktionalitet:</p>
+    <h1>Integritetspolicy för appen KVP Launcher (Interface for the Elderly)</h1>
+    <p>Denna integritetspolicy beskriver hur vår applikation behandlar, använder och skyddar användarinformation. Vi skapade KVP Launcher som en gratis programvara utformad för att förenkla användningen av smartphones för äldre vuxna och personer med synnedsättning. Vår högsta prioritet är din integritet och säkerhet.</p>
+    <h2>1. Datainsamling och användning (Appbehörigheter)</h2>
+    <p>Vår applikation är helt autonom (fungerar lokalt) och kräver endast åtkomst till vissa enhetsfunktioner för att säkerställa launcherns grundläggande bekvämlighet:</p>
     <ul>
-        <li><strong>SMS (SEND_SMS):</strong> Används uteslutande för att skicka ett nöd-SMS till fördefinierade kontakter när SOS-knappen aktiveras.</li>
-        <li><strong>Contacts (READ_CONTACTS):</strong> Används uteslutande för att välja och visa namnen på vårdgivare på startskärmen för snabbval. Missade samtal och inkommande meddelanden hanteras säkert via standardåtkomst till aviseringar, utan att läsa systemloggar.</li>        
-        <li><strong>Kamera (CAMERA):</strong> Används endast för att ficklampsfunktionen ska fungera.</li>
-        <li><strong>Paketsynlighet (QUERY_ALL_PACKAGES):</strong> Används uteslutande för att visa en fullständig lista över installerade appar på startskärmen, vilket gör det möjligt för användaren att enkelt starta dem.</li>
-        <li><strong>Tillgång till aviseringar (NotificationListenerService):</strong> Används strikt för att fånga upp och visa inkommande aviseringar (t.ex. Viber, Telegram eller SMS) i ett förstorat, lättillgängligt dialogfönster på startskärmen.</li>
+        <li><strong>Kontakter (READ_CONTACTS):</strong> Används uteslutande för att läsa telefonboken i syfte att välja och visa kontakter i appens snabbuppringningsmeny för din bekvämlighet. Denna data behandlas strikt lokalt på din enhet och överförs inte till tredje part eller externa servrar.</li>
+        <li><strong>Kamera (CAMERA):</strong> Används uteslutande för driften av systemets ficklampa (styr kamerans blixt). Appen tar inga foton, spelar inte in videor och överför inga bilder.</li>
+        <li><strong>Paketsynlighet (QUERY_ALL_PACKAGES):</strong> Används uteslutande för att upptäcka och visa hela listan med installerade appar på enheten, så att användaren bekvämt kan starta dem från huvudmenyn.</li>
+        <li><strong>Aviaviseringsåtkomst (NotificationListenerService):</strong> Används strikt för att fånga upp och visa inkommande aviseringar (t.ex. missade samtal eller nya meddelanden) i en förstorad, lättläst dialogruta. Vi läser inte systemloggar och lagrar inte din aviseringshistorik.</li>
     </ul>
-
-    <h2>2. Överföring av data till tredje part</h2>
-    <p><strong>Vi samlar inte in, lagrar, spårar eller överför</strong> några av dina personuppgifter, meddelandeinnehåll eller samtalshistorik till externa servrar eller tredje part. All databehandling sker lokalt och säkert på din enhet.</p>
-
-    <h2>3. Ändringar i denna integritetspolicy</h2>
-    <p>Vi kan uppdatera vår integritetspolicy från tid till annan. Ändringar träder i kraft så snart de publiceras på denna sida.</p>
-
-    <h2>4. Kontakt</h2>
-    <p>Om du har några frågor om denna policy kan du kontakta oss via följande e-postadress: <strong>koshutavp@gmail.com</strong></p>
-    
-    <p><em>Datum för senaste uppdatering: 6 juni 2026</em></p>
+    <h2>2. Dataöverföring till tredje part</h2>
+    <p>Vi <strong>samlar inte in, lagrar, spårar eller överför inte</strong> någon av dina personuppgifter, meddelandeinnehåll, kontaktlistor eller samtalshistorik till externa servrar, annonsnätverk eller några tredje parter. Alla dataoperationer sker helt lokalt på din enhet. Appen innehåller inga inbyggda analysverktyg eller dold spårning.</p>
+    <h2>3. Ändringar av integritetspolicyn</h2>
+    <p>Vi kan regelbundet uppdatera denna integritetspolicy för att återspegla ändringar i appens funktionalitet eller säkerhetskrav. Alla ändringar träder i kraft i och med att de publiceras på denna sida.</p>
+    <h2>4. Kontakta oss</h2>
+    <p>Om du har några frågor, förslag eller funderingar angående denna integritetspolicy, vänligen kontakta oss via e-post:<br><strong>koshutavp@gmail.com</strong></p>
+    <p><em>Datum för senaste uppdatering: 16 september 2026</em></p>
 </body>
 </html>
