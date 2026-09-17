@@ -2,7 +2,7 @@
 <html lang="cs">
 <head>
     <meta charset="utf-8">
-    <title>Zásady ochrany osobních údajů - KVP Launcher (Interface for the Elderly)</title>
+    <title>Zásady ochrany osobních údajů - KVP Launcher</title>
     <style>
         body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: 0 auto; color: #333; }
         h1 { color: #1E6BC9; }
@@ -11,27 +11,21 @@
 </head>
 <body>
     <h1>Zásady ochrany osobních údajů pro aplikaci KVP Launcher (Interface for the Elderly)</h1>
-    <p>Tyto zásady ochrany osobních údajů popisují, jak naše aplikace shromažďuje, používá a chrání informace uživatelů. Tuto aplikaci jsme vytvořili jako bezplatný software pro starší lidi.</p>
-
-    <h2>1. Shromažďování a používání osobních údajů</h2>
-    <p>Naše aplikace vyžaduje přístup k určitým funkcím zařízení výhradně za účelem zajištění základní funkčnosti spouštěče:</p>
+    <p>Tyto zásady ochrany osobních údajů popisují, jak naše aplikace zpracovává, používá a chrání informace o uživatelích. Aplikaci KVP Launcher jsme vytvořili jako bezplatný software navržený tak, aby usnadnil používání chytrých telefonů starším lidem a osobám se zrakovým postižením. Naší hlavní prioritou je vaše soukromí a bezpečnost.</p>
+    <h2>1. Shromažďování a používání dat (Oprávnění aplikace)</h2>
+    <p>Naše aplikace je zcela autonomní (funguje lokálně) a vyžaduje přístup k určitým funkcím zařízení výhradně k zajištění základního pohodlí launcheru:</p>
     <ul>
-        <li><strong>SMS (SEND_SMS):</strong> Používá se výhradně k odeslání nouzové textové zprávy předem definovaným kontaktům při aktivaci tlačítka SOS.</li>
-        <li><strong>Contacts (READ_CONTACTS):</strong> Používá se výhradně k výběru a zobrazení jmen pečovatelů na domovské obrazovce pro rychlé vytáčení. Zmeškané hovory a příchozí zprávy jsou bezpečně zpracovávány prostřednictvím standardního přístupu k oznámením, aniž by se četly systémové protokoly.</li>
-        <li><strong>Kamera (CAMERA):</strong> Používá se výhradně pro funkci svítilny.</li>
-        <li><strong>Zobrazení seznamu aplikací (QUERY_ALL_PACKAGES):</strong> Používá se výhradně k zobrazení úplného seznamu nainstalovaných aplikací na hlavní obrazovce a k umožnění uživateli je spouštět.</li>
-        <li><strong>Přístup k oznámením (NotificationListenerService):</strong> Používá se pouze k zachycení a zobrazení příchozích oznámení (např. Viber nebo SMS) ve zvětšeném, přístupném dialogovém okně na hlavní obrazovce.</li>
+        <li><strong>Kontakty (READ_CONTACTS):</strong> Používá se výhradně ke čtení telefonního seznamu za účelem výběru a zobrazení kontaktů v nabídce rychlé volby aplikace pro vaše pohodlí. Tyto údaje jsou zpracovávány výhradně lokálně ve vašem zařízení a nejsou předávány třetím stranám ani na externí servery.</li>
+        <li><strong>Fotoaparát (CAMERA):</strong> Používá se výhradně pro fungování systémové svítilny (ovládání blesku fotoaparátu). Aplikace nefotografuje, nenahrává videa ani nepřenáší obrázky.</li>
+        <li><strong>Viditelnost balíčků (QUERY_ALL_PACKAGES):</strong> Používá se výhradně k detekci a zobrazení úplného seznamu aplikací nainstalovaných v zařízení, aby je uživatel mohl pohodlně spouštět z hlavní nabídky.</li>
+        <li><strong>Přístup k oznámením (NotificationListenerService):</strong> Používá se výhradně k zachycení a zobrazení příchozích oznámení (např. zmeškaných hovorů nebo nových zpráv) ve zvětšeném a snadno čitelném dialogovém okně. Nečteme systémové protokoly a neukládáme vaši historii oznámení.</li>
     </ul>
-
-    <h2>2. Předávání údajů třetím stranám</h2>
-    <p><strong>Neshromažďujeme, neukládáme, nesledujeme ani nepředáváme</strong> žádné vaše osobní údaje, obsah zpráv ani historii hovorů na externí servery ani třetím stranám. Veškeré operace s údaji probíhají lokálně na vašem zařízení.</p>
-
+    <h2>2. Přenos dat třetím stranám</h2>
+    <p><strong>Neshromažďujeme, neukládáme, nesledujeme ani nepředáváme</strong> žádné vaše osobní údaje, obsah zpráv, seznamy kontaktů ani historii hovorů na externí servery, reklamním sítím ani žádným třetím stranám. Veškeré operace s daty probíhají absolutně lokálně ve vašem zařízení. Aplikace neobsahuje vestavěné analytické nástroje ani skryté sledování.</p>
     <h2>3. Změny zásad ochrany osobních údajů</h2>
-    <p>Naše Zásady ochrany osobních údajů můžeme periodicky aktualizovat. Změny nabývají účinnosti okamžikem jejich zveřejnění na této stránce.</p>
-
+    <p>Tyto zásady ochrany osobních údajů můžeme pravidelně aktualizovat, aby odrážely změny ve funkčnosti aplikace nebo bezpečnostních požadavcích. Všechny změny vstoupí v platnost okamžikem jejich zveřejnění na této stránce.</p>
     <h2>4. Kontakty</h2>
-    <p>Pokud máte jakékoli dotazy týkající se těchto zásad, můžete nás kontaktovat na e-mailové adrese: <strong>koshutavp@gmail.com</strong></p>
-    
-    <p><em>Datum poslední aktualizace: 6. června 2026</em></p>
+    <p>Máte-li jakékoli dotazy, návrhy nebo obavy týkající se těchto Zásad ochrany osobních údajů, kontaktujte nás na e-mailové adrese:<br><strong>koshutavp@gmail.com</strong></p>
+    <p><em>Datum poslední aktualizace: 16. září 2026</em></p>
 </body>
 </html>
