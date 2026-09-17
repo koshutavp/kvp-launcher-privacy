@@ -2,50 +2,30 @@
 <html lang="de">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datenschutzerklärung - KVP Launcher (Interface for the Elderly)</title>
+    <title>Datenschutzerklärung - KVP Launcher</title>
     <style>
         body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: 0 auto; color: #333; }
         h1 { color: #1E6BC9; }
-        h2 { color: #333; margin-top: 25px; }
-        ul { padding-left: 20px; }
-        li { margin-bottom: 10px; }
-        strong { color: #000; }
+        h2 { color: #333; }
     </style>
 </head>
 <body>
-    <h1>Datenschutzerklärung für KVP Launcher (Interface for the Elderly)</h1>
-    <p>Diese Datenschutzerklärung informiert Sie darüber, wie unsere Anwendung Nutzerinformationen erhebt, verwendet und schützt. Wir haben diese Anwendung als kostenlose Software (Free Software) speziell für ältere Menschen entwickelt.</p>
-
-    <h2>1. Verantwortlicher</h2>
-    <p>Verantwortlich für die Datenverarbeitung im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:</p>
-    <p>
-        <strong>Vadim Koshuta</strong><br>
-        E-Mail: <strong>koshutavp@gmail.com</strong>
-    </p>
-
-    <h2>2. Erhebung und Verarbeitung personenbezogener Daten auf Ihrem Gerät</h2>
-    <p>Unsere Anwendung benötigt Zugriff auf bestimmte Gerätefunktionen ausschließlich, um die Kernfunktionalität des Launchers bereitzustellen. Die Rechtsgrundlage für diese Verarbeitung ist Ihre Einwilligung gemäß <strong>Art. 6 Abs. 1 lit. a DSGVO</strong>, die Sie durch das Erteilen der jeweiligen App-Berechtigungen geben:</p>
+    <h1>Datenschutzerklärung für die App KVP Launcher (Interface for the Elderly)</h1>
+    <p>Diese Datenschutzerklärung beschreibt, wie unsere Anwendung Benutzerinformationen verarbeitet, verwendet und schützt. Wir haben KVP Launcher als kostenlose Software entwickelt, um die Smartphone-Nutzung für ältere Menschen und Menschen mit Sehbehinderung zu vereinfachen. Unsere oberste Priorität ist Ihre Privatsphäre und Sicherheit.</p>
+    <h2>1. Datenerfassung und -nutzung (App-Berechtigungen)</h2>
+    <p>Unsere Anwendung ist völlig autonom (funktioniert lokal) und erfordert den Zugriff auf bestimmte Gerätefunktionen ausschließlich, um den grundlegenden Komfort des Launchers zu gewährleisten:</p>
     <ul>
-        <li><strong>SMS (SEND_SMS):</strong> Wird ausschließlich dazu verwendet, im Falle einer Aktivierung des SOS-Notfallknopfs eine SMS an vordefinierte Kontakte zu senden.</li>
-        <li><strong>Contacts (READ_CONTACTS):</strong> Wird ausschließlich dazu verwendet, die Namen von Betreuungspersonen auf dem Startbildschirm für die Kurzwahl auszuwählen und anzuzeigen. Entgangene Anrufe und eingehende Nachrichten werden sicher über den standardmäßigen Benachrichtigungszugriff verarbeitet, ohne dabei Systemprotokolle zu lesen.</li>
-        <li><strong>Kamera (CAMERA):</strong> Wird ausschließlich für die Funktion der Taschenlampe benötigt.</li>
-        <li><strong>Sichtbarkeit von Paketen (QUERY_ALL_PACKAGES):</strong> Wird ausschließlich verwendet, um die vollständige Liste der installierten Anwendungen auf dem Startbildschirm anzuzeigen und dem Benutzer das Starten zu ermöglichen.</li>
-        <li><strong>Zugriff auf Benachrichtigungen (NotificationListenerService):</strong> Wird nur verwendet, um eingehende Benachrichtigungen (z. B. Viber oder SMS) abzufangen und in einem vergrößerten, barrierefreien Dialogfeld auf dem Hauptbildschirm anzuzeigen.</li>
+        <li><strong>Kontakte (READ_CONTACTS):</strong> Wird ausschließlich zum Lesen des Telefonbuchs verwendet, um Kontakte für Ihr Menü für die Kurzwahl auszuwählen und anzuzeigen. Diese Daten werden streng lokal auf Ihrem Gerät verarbeitet und nicht an Dritte oder externe Server übermittelt.</li>
+        <li><strong>Kamera (CAMERA):</strong> Wird ausschließlich für den Betrieb der System-Taschenlampenfunktion verwendet (Steuerung des Kamerablitzes). Die App macht keine Fotos, nimmt keine Videos auf und überträgt keine Bilder.</li>
+        <li><strong>Paketsichtbarkeit (QUERY_ALL_PACKAGES):</strong> Wird ausschließlich verwendet, um die vollständige Liste der auf dem Gerät installierten Apps zu erkennen und anzuzeigen, damit der Benutzer sie bequem über das Hauptmenü starten kann.</li>
+        <li><strong>Benachrichtigungszugriff (NotificationListenerService):</strong> Wird streng verwendet, um eingehende Benachrichtigungen (z. B. verpasste Anrufe oder neue Nachrichten) in einem vergrößerten, leicht lesbaren Dialogfeld abzufangen und anzuzeigen. Wir lesen keine Systemprotokolle und speichern Ihren Benachrichtigungsverlauf nicht.</li>
     </ul>
-
-    <h2>3. Keine Datenweitergabe an Dritte</h2>
-    <p><strong>Wir sammeln, speichern, verfolgen oder übertragen keine</strong> Ihrer personenbezogenen Daten, Nachrichteninhalte oder Anruflisten an externe Server oder Dritte. Alle Datenoperationen finden ausschließlich lokal auf Ihrem Endgerät statt.</p>
-
-    <h2>4. Bereitstellung der Website (Hosting via GitHub Pages)</h2>
-    <p>Diese Datenschutzerklärung wird auf GitHub Pages gehostet (GitHub Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA). Beim Aufruf dieser Webseite werden durch den Webbrowser automatisch Verbindungsdaten (wie z. B. Ihre IP-Adresse und das Datum des Aufrufs) an die Server von GitHub übertragen, um die Bereitstellung der Seite zu ermöglichen. Dies liegt im berechtigten Interesse gemäß Art. 6 Abs. 1 lit. f DSGVO.</p>
-
-    <h2>5. Ihre Rechte</h2>
-    <p>Da alle Daten der App ausschließlich lokal auf Ihrem Gerät verarbeitet werden und wir keine Kontrolle darüber haben, können Sie Ihre Rechte (wie das Recht auf Löschung oder Widerruf) jederzeit selbst ausüben, indem Sie die App-Berechtigungen in den Android-Einstellungen anpassen oder die Anwendung deinstallieren. Bezüglich der Nutzung dieser Website stehen Ihnen die gesetzlichen Rechte auf Auskunft, Berichtigung und Löschung gegenüber dem Verantwortlichen zu.</p>
-
-    <h2>6. Änderungen dieser Datenschutzerklärung</h2>
-    <p>Wir können unsere Datenschutzerklärung von Zeit zu Zeit aktualisieren. Änderungen treten mit der Veröffentlichung auf dieser Seite in Kraft.</p>
-    
-    <p><em>Stand der letzten Aktualisierung: 25. Mai 2026</em></p>
+    <h2>2. Datenübertragung an Dritte</h2>
+    <p>Wir <strong>erfassen, speichern, verfolgen oder übermitteln keine</strong> Ihrer persönlichen Daten, Nachrichteninhalte, Kontaktlisten oder Anrufhistorien an externe Server, Werbenetzwerke oder jegliche Dritte. Alle Datenoperationen erfolgen absolut lokal auf Ihrem Gerät. Die App enthält keine integrierten Analysetools oder verstecktes Tracking.</p>
+    <h2>3. Änderungen der Datenschutzerklärung</h2>
+    <p>Wir können diese Datenschutzerklärung regelmäßig aktualisieren, um Änderungen der App-Funktionalität oder der Sicherheitsanforderungen widerzuspiegeln. Alle Änderungen treten mit ihrer Veröffentlichung auf dieser Seite in Kraft.</p>
+    <h2>4. Kontakt</h2>
+    <p>Wenn Sie Fragen, Anregungen oder Bedenken bezüglich dieser Datenschutzerklärung haben, kontaktieren Sie uns bitte per E-Mail unter:<br><strong>koshutavp@gmail.com</strong></p>
+    <p><em>Letzte Aktualisierung: 16. September 2026</em></p>
 </body>
 </html>
