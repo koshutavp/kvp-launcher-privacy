@@ -2,7 +2,7 @@
 <html lang="hu">
 <head>
     <meta charset="utf-8">
-    <title>Adatvédelmi irányelvek - KVP Launcher (Interface for the Elderly)</title>
+    <title>Adatvédelmi irányelvek - KVP Launcher</title>
     <style>
         body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: 0 auto; color: #333; }
         h1 { color: #1E6BC9; }
@@ -11,27 +11,21 @@
 </head>
 <body>
     <h1>Adatvédelmi irányelvek a KVP Launcher (Interface for the Elderly) alkalmazáshoz</h1>
-    <p>Ez az adatvédelmi irányelv bemutatja, hogyan gyűjti, használja és védi alkalmazásunk a felhasználói információkat. Ezt az alkalmazást ingyenes szoftverszolgáltatásként hoztuk létre idős emberek számára.</p>
-
-    <h2>1. Személyes adatok gyűjtése és felhasználása</h2>
-    <p>Alkalmazásunk kizárólag a launcher alapvető funkcióinak biztosítása érdekében igényel hozzáférést a készülék bizonyos funkcióihoz:</p>
+    <p>Ez az adatvédelmi szabályzat leírja, hogyan kezeli, használja és védi alkalmazásunk a felhasználói információkat. A KVP Launcher-t egy ingyenes szoftverként hoztuk létre, amelynek célja az okostelefon-használat egyszerűsítése az idősek és a látássérültek számára. Legfőbb prioritásunk az Ön magánélete és biztonsága.</p>
+    <h2>1. Adatgyűjtés és felhasználás (Alkalmazásengedélyek)</h2>
+    <p>Alkalmazásunk teljesen autonóm (helyileg működik), és csak a launcher alapvető kényelmének biztosítása érdekében igényel hozzáférést bizonyos eszközfunkciókhoz:</p>
     <ul>
-        <li><strong>SMS (SEND_SMS):</strong> Kizárólag vészhelyzeti SMS küldésére szolgál az előre beállított partnereknek, amikor az SOS gomb aktiválva van.</li>
-        <li><strong>Contacts (READ_CONTACTS):</strong> Kizárólag a gondozók nevének kiválasztására és a kezdőképernyőn történő megjelenítésére szolgál a gyorshívás érdekében. A nem fogadott hívások és a bejövő üzenetek kezelése biztonságosan, a szabványos értesítési hozzáférésen keresztül történik, a rendszernaplók olvasása nélkül.</li>
-        <li><strong>Kamera (CAMERA):</strong> Kizárólag a zseblámpa funkció működtetésére szolgál.</li>
-        <li><strong>Csomagok láthatósága (QUERY_ALL_PACKAGES):</strong> Kizárólag a telepített alkalmazások teljes listájának főképernyőn való megjelenítésére szolgál, lehetővé téve a felhasználó számára azok elindítását.</li>
-        <li><strong>Értesítések hozzáférése (NotificationListenerService):</strong> Kizárólag a bejövő értesítések (pl. Viber vagy SMS) elfogására és megjelenítésére szolgál egy nagyított, akadálymentes dialógusablakban a főképernyőn.</li>
+        <li><strong>Névjegyek (READ_CONTACTS):</strong> Kizárólag a telefonkönyv olvasására szolgál, hogy kiválassza és megjelenítse a névjegyeket az alkalmazás gyorstárcsázási menüjében az Ön kényelme érdekében. Ezeket az adatokat szigorúan helyileg dolgozzuk fel az eszközén, és nem továbbítjuk harmadik feleknek vagy külső szervereknek.</li>
+        <li><strong>Kamera (CAMERA):</strong> Kizárólag a rendszer zseblámpa funkciójának (a vaku vezérlésének) működtetésére szolgál. Az alkalmazás nem készít fényképeket, nem rögzít videókat, és nem továbbít képeket.</li>
+        <li><strong>Csomagok láthatósága (QUERY_ALL_PACKAGES):</strong> Kizárólag az eszközre telepített alkalmazások teljes listájának észlelésére és megjelenítésére szolgál, lehetővé téve a felhasználó számára, hogy kényelmesen elindítsa őket a főmenüből.</li>
+        <li><strong>Értesítési hozzáférés (NotificationListenerService):</strong> Szigorúan a bejövő értesítések (pl. nem fogadott hívások vagy új üzenetek) elfogására és megjelenítésére szolgál egy felnagyított, könnyen olvasható párbeszédablakban. Nem olvassuk a rendszernaplókat, és nem tároljuk az értesítési előzményeket.</li>
     </ul>
-
-    <h2>2. Adatátadás harmadik feleknek</h2>
-    <p><strong>Nem gyűjtjük, nem tároljuk, nem követjük nyomon és nem továbbítjuk</strong> az Ön személyes adatait, üzeneteinek tartalmát vagy híváselőzményeit külső szerverekre vagy harmadik feleknek. Minden adatművelet helyileg, az Ön készülékén történik.</p>
-
-    <h2>3. Az adatvédelmi irányelvek változásai</h2>
-    <p>Időről időre frissíthetjür az Adatvédelmi irányelveinket. A módosítások az ezen az oldalon való közzétételük pillanatától lépnek hatályba.</p>
-
+    <h2>2. Adattovábbítás harmadik feleknek</h2>
+    <p><strong>Nem gyűjtjük, nem tároljuk, nem követjük nyomon és nem továbbítjuk</strong> semmilyen személyes adatát, üzenettartalmát, névjegylistáját vagy híváselőzményeit külső szervereknek, hirdetési hálózatoknak vagy bármilyen harmadik félnek. Minden adatművelet abszolút helyileg történik az Ön eszközén. Az alkalmazás nem tartalmaz beépített elemző eszközöket vagy rejtett nyomkövetést.</p>
+    <h2>3. Változások az adatvédelmi irányelvekben</h2>
+    <p>Időnként frissíthetjük ezt az Adatvédelmi szabályzatot, hogy tükrözze az alkalmazás funkcionalitásának vagy a biztonsági követelményeknek a változásait. Minden változás a közzététel pillanatában lép hatályba ezen az oldalon.</p>
     <h2>4. Kapcsolat</h2>
-    <p>Ha bármilyen kérdése van ezzel az irányelvvel kapcsolatban, kapcsolatba léphet velünk az alábbi e-mail címen: <strong>koshutavp@gmail.com</strong></p>
-    
-    <p><em>Utolsó frissítés dátuma: 2026. június 6.</em></p>
+    <p>Ha bármilyen kérdése, javaslata vagy aggálya van ezzel az Adatvédelmi szabályzattal kapcsolatban, kérjük, vegye fel velünk a kapcsolatot e-mailben:<br><strong>koshutavp@gmail.com</strong></p>
+    <p><em>Utolsó frissítés dátuma: 2026. szeptember 16.</em></p>
 </body>
 </html>
